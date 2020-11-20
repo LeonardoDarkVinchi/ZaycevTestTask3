@@ -16,11 +16,4 @@ class MainActivity : AppCompatActivity() {
         mEditor.apply()
         if (startTimes == 3) Toast.makeText(applicationContext, "Time to feed your turtle!", Toast.LENGTH_SHORT).show()
     }
-
-    fun nullifierClick(view: View) {
-        val mEditor = getSharedPreferences("main",MODE_PRIVATE).edit()
-        mEditor.putInt("start_times", 0)
-        mEditor.apply()
-    }
-
 }
